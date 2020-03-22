@@ -1,8 +1,8 @@
 module.exports = {
   user: (app, req, res) => {
-    req.assert("name", "O campo Nome é obrigratório.").notEmpty();
+    req.assert("_name", "O campo Nome é obrigratório.").notEmpty();
     req
-      .assert("email", "E-mail inválido.")
+      .assert("_email", "E-mail inválido.")
       .notEmpty()
       .isEmail();
 
