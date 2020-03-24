@@ -26,15 +26,20 @@ class HttpRequest {
 
       ajax.onload = event => {
         let obj = {};
+
         try {
           obj = JSON.parse(ajax.responseText);
         } catch (e) {
           reject(e);
           console.error(e);
         }
+
         resolve(obj);
       };
-      ajax.send();
+
+      ajax.setRequestHeader("Content-Type", "application/json");
+
+      ajax.send(JSON.stringify(params));
     });
   }
 }
