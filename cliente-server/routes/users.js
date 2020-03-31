@@ -49,7 +49,7 @@ router.delete("/:id", function(req, res, next) {
   });
 });
 
-router.post("/:id", function(req, res, next) {
+router.post("/", function(req, res, next) {
   client.post(`/users/`, req.body, function(err, request, response, obj) {
     assert.ifError(err);
 
