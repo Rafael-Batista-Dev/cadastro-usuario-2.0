@@ -2,7 +2,7 @@
 
 > Projeto tem como objetivo implementar apresentar o consumo de uma api restful em um sistema de cadastro de usuários.
 
-![Gif](https://github.com/Rafael-Batista-Dev/cadastro-usuario-2.0/blob/master/pipefy.gif)
+![Gif](https://github.com/Rafael-Batista-Dev/cadastro-usuario-2.0/blob/master/painel.gif)
 
 ## Instalação
 
